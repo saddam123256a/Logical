@@ -1,0 +1,106 @@
+1.Swap Two number
+class A{
+public static void main(String args[]){
+int a=10,b=20;
+int t=a;
+a=b;
+b=t;
+System.out.println( a);
+System.out.println( b);
+}}
+2.how to reverse a number 
+import java.util.Scanner;
+class A{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int num=sc.nextInt();
+int rev=0;
+while(num!=0)
+{
+rev=rev*10+num%10;
+num=num/10;
+}
+System.out.println(rev);
+}}
+3.Reverse String
+class A{
+public static void main(String args[]){
+String str="ABCD";
+String rev="";
+int len=str.length();
+for(int i=len-1;i>=0;i--){
+rev=rev+str.charAt(i);
+}
+System.out.println(rev);
+}}
+4.Number is palindrome or Not
+import java.util.Scanner;
+class A{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int num=sc.nextInt();
+int rev=0;
+int temp_no=num;
+while(num!=0)
+{
+rev=rev*10+num%10;
+num=num/10;
+}
+if(temp_no==rev)
+{
+System.out.println("Palindrome");
+}
+else
+{
+System.out.println("Not Palindrome");
+}}}
+5.Palindrome String 
+import java.util.Scanner;
+class A{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+String str=sc.next();
+String temp=str;
+String rev="";
+int len=str.length();
+for(int i=len-1;i>=0;i--)
+{
+rev=rev+str.charAt(i);
+}
+if(temp.equals(rev))
+{
+System.out.println("Palindrome String");
+}
+else{
+System.out.println("Not Palindrome String");
+}}}
+6.Fabonacci series
+class A{
+public static void main(String args[]){
+int n1=0,n2=1, sum=0;
+for(int i=2;i<10;i++)
+{
+sum=n1+n2;
+System.out.print(" "+sum);
+n1=n2;
+n2=sum;
+}}}
+7.Prime number
+class A{
+public static void main(String args[]){
+int no=4;
+int temp=0;
+for(int i=2;i<=no-1;i++)
+{
+if(no%i==0)
+{
+temp=temp+1;
+}
+}
+if(temp==0)
+{
+System.out.println("prime");
+}
+else{
+System.out.println("not prime");
+}}}
